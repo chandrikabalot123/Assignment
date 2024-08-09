@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+        padding: 30px;
+        width: 100%;
+      }
+      .box {
+        border: 2px solid black;
+      }
+      .box .bgcolor {
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0px;
+        font-size: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      p {
+        width: 100;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        padding: 10px;
+      }
+      .button {
+        padding: 10px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .button .btn1 {
+        padding: 4px;
+        border: 1px solid black;
+      }
+      .button .btn2 {
+        padding: 4px;
+        border: 1px solid black;
+      }
+      /* // X-Large devices (large desktops, less than 1400px) */
+      @media (max-width: 1400px) {
+      }
+      /* // Large devices (desktops, less than 1200px) */
+      @media (max-width: 1200px) {
+        .main {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+        }
+      }
+
+      /* // Medium devices (tablets, less than 992px) */
+      @media (max-width: 991px) {
+      }
+      /* // Small devices (landscape phones, less than 768px) */
+      @media (max-width: 767.98px) {
+        .main {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+        }
+      }
+
+      /* // X-Small devices (portrait phones, less than 576px) */
+      @media (max-width: 575.98px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <div class="bgcolor">Thumbnali</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          quaerat necessitatibus debitis reprehenderit esse modi perspiciatis
+          molestias. Nam, aut iure?
+        </p>
+        <div class="button">
+          <button class="btn1">View</button>
+          <button class="btn2">Edit</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="bgcolor">Thumbnali</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          quaerat necessitatibus debitis reprehenderit esse modi perspiciatis
+          molestias. Nam, aut iure?
+        </p>
+        <div class="button">
+          <button class="btn1">View</button>
+          <button class="btn2">Edit</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="bgcolor">Thumbnali</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          quaerat necessitatibus debitis reprehenderit esse modi perspiciatis
+          molestias. Nam, aut iure?
+        </p>
+        <div class="button">
+          <button class="btn1">View</button>
+          <button class="btn2">Edit</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="bgcolor">Thumbnali</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          quaerat necessitatibus debitis reprehenderit esse modi perspiciatis
+          molestias. Nam, aut iure?
+        </p>
+        <div class="button">
+          <button class="btn1">View</button>
+          <button class="btn2">Edit</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="bgcolor">Thumbnali</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          quaerat necessitatibus debitis reprehenderit esse modi perspiciatis
+          molestias. Nam, aut iure?
+        </p>
+        <div class="button">
+          <button class="btn1">View</button>
+          <button class="btn2">Edit</button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="bgcolor">Thumbnali</div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+          quaerat necessitatibus debitis reprehenderit esse modi perspiciatis
+          molestias. Nam, aut iure?
+        </p>
+        <div class="button">
+          <button class="btn1">View</button>
+          <button class="btn2">Edit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

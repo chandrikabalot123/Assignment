@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.main p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.06em;
+  text-align: left;
+}
+.main .nav a {
+  text-decoration: none;
+}
+.main .nav {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  gap: 45px;
+}
+.main .log {
+  margin-left: 12px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.main button {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  background: #794cff;
+  color: black;
+
+  padding: 5px;
+  border: none;
+}
+.main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px;
+  /* gap: 10px; */
+}
+.main2 .box1 {
+  height: 25px;
+  width: 120px;
+  /* border: 2px solid black; */
+  border-radius: 20px;
+  background-color: #81c43b;
+  text-align: center;
+  color: #f2f9eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main2 .box2 {
+  height: 25px;
+  width: 190px;
+  /* border: 2px solid black; */
+  /* border-radius: 20px; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #f2f9eb;
+  color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main3 h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: center;
+  margin-top: 15px;
+  animation-name: exampal;
+  animation-duration: 1s;
+  position: relative;
+
+  /* animation-direction: alternate; */
+  /* animation-direction: reverse; */
+  /* animation-direction: alternate-reverse; */
+
+  animation-iteration-count: infinite;
+  animation-iteration-count: 2;
+}
+@keyframes exampal {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: o;
+    left: 800px;
+  }
+}
+.main3 p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  width: 50%;
+  color: #4e5a65;
+  padding: 10px;
+}
+.main3 .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.main3 input {
+  padding: 10px 40px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  border: 1px solid black;
+  text-align: left;
+}
+.main3 button {
+  padding: 13px 30px;
+  border: 1px solid #794cff;
+  background-color: #794cff;
+}
+.main4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main5 p {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+.main5 .pic {
+  text-align: center;
+}
+.main5 img {
+  margin: 0px 80px;
+}
+.main6 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  background-color: whitesmoke;
+}
+.main6 .box1 {
+  padding: 50px 80px;
+}
+.main6 .box2 {
+  width: 30%;
+}
+.main6 .box2 .boxx {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+}
+.main6 .box2 .boxx p {
+  margin-top: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.main6 .box2 .boxx h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+.main6 .box2 .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 60px;
+  padding: 6px;
+}
+.main6 .box2 .box p {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.main6 .box2 .box h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: left;
+}
+/* .main7 {
+} */
+.main7 h2 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-top: 40px;
+}
+.main7 .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+.main7 .box .sec {
+  height: 200px;
+  width: 22%;
+  padding: 10px;
+}
+.main7 .box .sec h4 {
+  margin-top: 10px;
+}
+.main7 .box .sec p {
+  margin-top: 10px;
+}
+.main8 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  background-color: whitesmoke;
+}
+.main8 .box1 {
+  width: 30%;
+}
+.main8 .box1 h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.main8 .box1 p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin: 20px 0px;
+}
+.main8 .box1 button {
+  padding: 10px 15px;
+  background-color: #796eff;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+.main8 .box2 {
+  padding: 50px 10px;
+}
+.main9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main9 h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.main9 p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  width: 40%;
+  margin-top: 20px;
+}

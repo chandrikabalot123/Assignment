@@ -1,0 +1,79 @@
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  #item1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  #item2 {
+    grid-column: 1/2;
+    grid-row: 3/6;
+  }
+  #item3 {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  #item4 {
+    grid-column: 2/5;
+    grid-row: 3/4;
+  }
+  #item6 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+  }
+  #item7 {
+    grid-column: 2/4;
+    grid-row: 5/6;
+  }
+  #item8 {
+    grid-column: 2/5;
+    grid-row: 4/5;
+  }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2.5fr 2.3fr 2fr 2fr 2.2fr;
+  }
+  #item1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  #item2 {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  #item3 {
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+  #item4 {
+    grid-column: 1/5;
+    grid-row: 4/5;
+  }
+  #item6 {
+    grid-column: 1/5;
+    grid-row: 7/8;
+  }
+  #item7 {
+    grid-column: 1/5;
+    grid-row: 6/7;
+  }
+  #item8 {
+    grid-column: 1/5;
+    grid-row: 5/6;
+  }
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}

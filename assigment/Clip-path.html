@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        background-image: url(./img/Background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 0px; */
+        height: 100vh;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 74%, 51% 92%, 0 75%);
+      }
+      .nav1.box {
+        display: flex;
+        padding: 30px;
+        border: 2px white;
+        border-radius: 7px;
+      }
+      .btn1 {
+        background-color: white;
+        color: gray;
+        border: none;
+        border-color: white;
+        height: 30px;
+        width: 30px;
+      }
+      .btn2 {
+        background-color: gray;
+        color: white;
+        border: none;
+        border: 2px solid white;
+        border-color: white;
+        height: 30px;
+        width: 60px;
+      }
+      .nav1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+      }
+      .box1 {
+        display: flex;
+      }
+      .box1 ul {
+        list-style-type: none;
+        display: flex;
+        gap: 30px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .nav2 {
+        /* display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; */
+        text-align: center;
+        margin-top: 100px;
+      }
+      .nav2 .per {
+        /* margin-bottom: 40px; */
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .nav2 .per {
+        width: 50%;
+        margin: 20px auto;
+      }
+      .nav2 p {
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        /* margin-bottom: 100px; */
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      .line1 {
+        display: flex;
+        justify-content: center;
+        /* width: 50%;
+        height: 30px; */
+        gap: 11px;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .line {
+        height: 2px;
+        width: 140px;
+        background-color: white;
+      }
+      .dot {
+        background-color: red;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+      }
+
+      .nav2 h1 {
+        color: white;
+        font-size: 40px;
+        letter-spacing: 3px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+      }
+      .btn .bt1 {
+        background-color: red;
+        padding: 12px;
+        border-radius: 4px;
+        border: none;
+        /* margin: 0px 60px; */
+        color: white;
+      }
+      .btn .bt2 {
+        color: white;
+        padding: 12px 30px;
+        border-radius: 4px;
+        border: 2px solid white;
+        background-color: black;
+        /* margin: 0px 60px; */
+        background: transparent;
+      }
+      .boxx {
+        height: 40px;
+        width: 40px;
+        border: 2px solid rgb(249, 246, 246);
+        color: red;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+          rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+          rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        position: relative;
+        border-radius: 50%;
+        bottom: 70px;
+        left: 623px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mainbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+      .main2 {
+        /* height: 100; */
+        width: 200px;
+        /* border: 2px solid black; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .main2 .box {
+        height: 50px;
+        width: 50px;
+        /* border: 2px solid black; */
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      }
+      .main2 h3 {
+        color: red;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .main2 .box1 {
+        background-color: red;
+        height: 2px;
+        width: 70px;
+        /* margin-left: 60px; */
+        margin: 10px;
+      }
+      .main2 p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .main3 {
+        /* height: 100; */
+        width: 200px;
+        /* border: 2px solid black; */
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .main3 .box {
+        height: 50px;
+        width: 50px;
+        /* border: 2px solid black; */
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      }
+      .main3 h3 {
+        color: black;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      .main3 .box1 {
+        background-color: black;
+        height: 2px;
+        width: 70px;
+        /* margin-left: 60px; */
+        margin: 10px;
+      }
+      .main3 p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav1">
+        <div class="box">
+          <button class="btn1">L</button>
+          <button class="btn2">ogo</button>
+        </div>
+        <div class="box1">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">PORTFOLIO</a></li>
+            <li><a href="">PRICING</a></li>
+            <li><a href="">TEAM</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav2">
+        <p>Our clients are our first priority</p>
+        <h1>WELCOME TO SKY</h1>
+        <div class="line1">
+          <div class="line"></div>
+          <div class="dot"></div>
+          <div class="line"></div>
+        </div>
+        <p class="per">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum
+          ipsam, veritatis repellat omnis veniam repudiandae esse maxime
+          nesciunt sequi laudantium provident suscipit, voluptatibus
+          consequuntur, maiores officiis rem minus vitae. Lorem, ipsum dolor.
+        </p>
+        <div class="btn">
+          <button class="bt1">GET STARTTED NOW</button>
+          <button class="bt2">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="boxx">
+      <i class="fa-solid fa-anchor" style="color: #e01f1f"></i>
+    </div>
+    <div class="mainbox">
+      <div class="main2">
+        <div class="box">
+          <i class="fa-regular fa-message fa-2xl" style="color: #e01f1f"></i>
+        </div>
+        <h3>SLEEK DESIGN</h3>
+        <div class="box1"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          blanditiis.
+        </p>
+      </div>
+      <div class="main3">
+        <div class="box">
+          <i class="fa-regular fa-lightbulb fa-2xl" style="color: #e01f1f"></i>
+        </div>
+        <h3>CLEAN CODE</h3>
+        <div class="box1"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          blanditiis.
+        </p>
+      </div>
+      <div class="main3">
+        <div class="box">
+          <i class="fa-regular fa-heart fa-2xl" style="color: #e01f1f"></i>
+        </div>
+        <h3>CREATIVE IDEAS</h3>
+        <div class="box1"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          blanditiis.
+        </p>
+      </div>
+      <div class="main3">
+        <div class="box">
+          <i class="fa-solid fa-seedling fa-2xl" style="color: #e01f1f"></i>
+        </div>
+        <h3>FREE SUPPORT</h3>
+        <div class="box1"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+          blanditiis.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
